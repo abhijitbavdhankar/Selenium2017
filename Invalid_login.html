@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.guru99.com/test/newtours/" />
+<title>Invalid_login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Invalid_login</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/test/newtours/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:Welcome: Mercury Tours</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=userName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>name=firstname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Atlanta to Las Vegas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>atlanta to Las Vegas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPositionLeft</td>
+	<td>link=Home</td>
+	<td>53</td>
+</tr>
+<tr>
+	<td>verifyElementPositionTop</td>
+	<td>link=Home</td>
+	<td>303</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userName</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=font:contains(&quot;Password:&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=font:contains(&quot;Boston&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>tutorial</td>
+	<td>myVariable</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${myVariable}</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=userName</td>
+	<td>var1</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=password</td>
+	<td>var2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${var1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${var2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=REGISTER</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=lastName]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.getElementById(&quot;email&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.forms[0].elements[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.forms[0].elements[&quot;confirmPassword&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
